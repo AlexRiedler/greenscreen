@@ -112,3 +112,7 @@ section {
   text-align: center;
   color: #fff;
 }
+iframe.zoomer {
+  transform: scale(0.75);
+  transform-origin: 0 0;
+}
