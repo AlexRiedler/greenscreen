@@ -24,7 +24,14 @@
     </div>
 
     <script type="text/javascript">
-      $('iframe.zoomer').zoomer({ height: 720, width: 1280, zoom: 0.75 });
+      // refresh the iframe after 3 minutes
+      $(function() {
+          $('iframe.zoomer').zoomer({ height: 720, width: 1280, zoom: 0.75 });
+
+          setInterval(function(){
+              $('iframe').attr('src', $('iframe').attr('src'));
+          }, (3 * 60 * 1000));
+      });
     </script>
   </body>
 </html>

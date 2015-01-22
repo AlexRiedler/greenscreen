@@ -109,11 +109,11 @@ $('iframe').zoomer({ width: 200, zoom: 0.5 });
 
             options.externalSrc = true;
 
-            try {
-                if ($el.get(0).contentWindow.document) {
-                    options.externalSrc = false;
-                }
-            } catch (e) {}
+            //try {
+            //    if ($el.get(0).contentWindow.document) {
+            //        options.externalSrc = false;
+            //    }
+            //} catch (e) {}
 
             $el[pluginName]('setUpWrapper');
 
